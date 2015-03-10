@@ -13,6 +13,28 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew install brew-cask
+brew install gcc
+brew install git
+brew install mongodb
+brew install node
+brew install sqlite
+brew install wget
+brew install docker
+
+brew cask install atom
+brew cask install cakebrew
+brew cask install dropbox
+brew cask install iterm2
+brew cask install launchrocket
+brew cask install sequel-pro
+brew cask install sourcetree
+brew cask install mongohub
+brew cask install macdown
+
+brew cleanup
+brew cask cleanup
 
 exit 0
